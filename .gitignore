@@ -1,0 +1,5 @@
+debian/mauna-common
+debian/.debhelper
+debian/debhelper-build-stamp
+debian/files
+debian/mauna-common.substvars
