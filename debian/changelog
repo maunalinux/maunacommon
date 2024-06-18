@@ -1,3 +1,19 @@
+mauna-common (2.3.1) mauna; urgency=medium
+
+  * New upstream release
+  * Cache the verified state of Flatpaks.
+  * _flatpak.py: Set resolve_addons when checking for addons to remove
+  * Simplify Xpath query for app verification update.
+  * cache.py: Save existing apt section info when updating flatpaks.
+  * Installer: Performance-oriented improvements.
+  * cache.py: Add a schema version to the package cache.
+  * Remove any addons when uninstalling a flatpak.
+  * flatpaks: Use AppStream and libxmlb instead of AppStreamGlib.
+  * polkit: Remove restrictions for remote/non-active sessions.
+  * _flatpak.py: Fix end-of-lifed-with-rebase handling.
+
+ -- Mauna Linux <dev@maunalinux.top>  Thu, 09 May 2024 18:40:34 -0300
+
 mauna-common (2.3.0mauna1) mauna; urgency=medium
 
   * Test
