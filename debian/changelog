@@ -1,3 +1,11 @@
+mauna-common (2.3.2) mauna; urgency=medium
+
+  * New upstream release
+  [ Michael Webster ]
+  * pkginfo: Initialize cached strings to None
+
+ -- Mauna Linux <dev@maunalinux.top>  Sat, 22 Jun 2024 19:31:44 -0300
+
 mauna-common (2.3.1) mauna; urgency=medium
 
   * New upstream release
