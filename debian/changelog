@@ -1,3 +1,23 @@
+mauna-common (2.3.3) mauna; urgency=medium
+
+  * New upstream release
+
+  [ Michael Webster ]
+  * Fix cache lookup for incomplete flatpak ref strings.
+  * flatpaks: When updating the cache, fetch an updated appstream file before creating a remote Pool.
+  * cache: Don't search for apt packages with the flatpak lookup.
+  * flatpaks: Also check <metadata> for the verified tag.
+  * flatpak: Get the developer name for the current locale.
+  * pkginfo: Fix flatpak description formatting.
+  * flatpak: Don't add installed runtimes to the in-memory package cache.
+  * pkginfo: Use AppStream's function for formatting flatpak descriptions.
+  * pkgInfo: Filter out apt packages without a candidate, they're broken to maunainstall/maunacommon.
+  * flatpaks: backport locale utility function from appstream 1.0+.
+  * pkginfo: Fall back to html2text if the appstream library doesn't contain AppStream.markup_convert().
+  * flatpak: Use a set() instead of array when gathering locale variants. 
+
+ -- Mauna Linux <dev@maunalinux.top>  Fri, 26 Jul 2024 17:53:33 -0300
+
 mauna-common (2.3.2) mauna; urgency=medium
 
   * New upstream release
