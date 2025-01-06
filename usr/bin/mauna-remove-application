@@ -57,10 +57,10 @@ class MaunaRemoveWindow:
         if not "flatpak" in desktopFile:
             return False
 
-        if not os.path.exists('/usr/bin/maunainstall-remove-app'):
+        if not os.path.exists('/usr/bin/mauna-remove-flatpak'):
             return False
 
-        flatpak_remover = subprocess.Popen(['/usr/bin/maunainstall-remove-app', desktopFile])
+        flatpak_remover = subprocess.Popen(['/usr/bin/mauna-remove-flatpak', desktopFile])
         retcode = flatpak_remover.wait()
 
         return retcode == 0
