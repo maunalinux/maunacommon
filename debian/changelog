@@ -1,3 +1,26 @@
+mauna-common (2.3.4) mauna; urgency=medium
+
+  * Use xmlb instead of AppStream for working with flatpak appstream files
+  * flatpaks: Don't process installed refs until appstream data has been loaded
+  * Fix a warning message
+  * Allow pkginfo lookup to accept FlatpakRef string in addition to a simple name
+  * Add mauna-remove-flatpak
+  * Let xmlb load only desired language nodes, instead of relying on language-restricted xpath queries.
+  * Always check for updated appstream at startup
+  * Add keywords to the cache
+  * mauna-remove-application: only disallow removal of packages that are dependencies of system packages
+  * _apt.py : Used setdefault method to initialize sections dictionary
+  * l10n: Update POT
+  * Fix Flatpak addon lookup
+  * flatpak: More work on addon detection.
+  * installer: Don't cache the appstream package at runtime, it can be refreshed and become invalid
+  * _apt.py: Filter out kernel-related packages
+  * _flatpak.py: Fix error when loading a flatpakref file.
+  * _flatpak.py: Don't try to pass a NULL branch to construct a FlatpakRemoteRef.
+  * appstream_pool.py: Check for compressed xml, and return source screenshots if no thumbnails are available.
+
+ -- Mauna Linux <dev@maunalinux.top>  Tue, 07 Jan 2025 22:55:06 -0300
+
 mauna-common (2.3.3) mauna; urgency=medium
 
   * New upstream release
