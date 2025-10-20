@@ -9,7 +9,7 @@ import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
-import maunacommon.aptdaemon
+import aptkit.simpleclient
 
 # i18n
 gettext.install("mauna-common", "/usr/share/mauna/locale")
@@ -105,12 +105,11 @@ class MaunaRemoveWindow:
         warnDlg.get_content_area().add(scrolledwindow)
         warnDlg.set_border_width(12)
 
-        self.apt = maunacommon.aptdaemon.APT(warnDlg)
-
         response = warnDlg.run()
         if response == Gtk.ResponseType.OK:
-            self.apt.set_finished_callback(self.on_finished)
-            self.apt.remove_packages(packages_to_remove)
+            apt = aptkit.simpleclient.SimpleAPTClient(warnDlg)
+            apt.set_finished_callback(self.on_finished)
+            apt.remove_packages(packages_to_remove)
         elif response == Gtk.ResponseType.CANCEL:
             sys.exit(0)
 
