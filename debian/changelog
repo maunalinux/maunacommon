@@ -1,3 +1,13 @@
+mauna-common (2.3.5) polaris; urgency=medium
+
+  * don't filter out librewolf
+  * mauna-remove-applications: Switch to aptkit
+  * installer: Use aptkit's gtk3 widgets.
+  * Remove aptdaemon.py
+  * pkgInfo: Fix AptPkgInfo's get_icon().
+
+ -- Mauna Linux <dev@maunalinux.top>  Mon, 20 Oct 2025 18:11:36 -0300
+
 mauna-common (2.3.4) mauna; urgency=medium
 
   * Use xmlb instead of AppStream for working with flatpak appstream files
