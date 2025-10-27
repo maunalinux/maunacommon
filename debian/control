@@ -17,5 +17,8 @@ Depends: python3,
          mauna-translations,
          libgtk3-perl,
          ${misc:Depends},
+Conflicts: aptdaemon, aptdaemon-data, python3-aptdaemon.gtk3widgets, python3-aptdaemon.test, python3-aptdaemon
+Breaks: aptdaemon, aptdaemon-data, python3-aptdaemon.gtk3widgets, python3-aptdaemon.test, python3-aptdaemon
+Replaces: aptdaemon, aptdaemon-data, python3-aptdaemon.gtk3widgets, python3-aptdaemon.test, python3-aptdaemon
 Description: Common scripts and resources for Mauna Linux
  A collection of scripts and resources used by other Mauna Linux packages
