@@ -1,3 +1,9 @@
+mauna-common (2.3.7) polaris; urgency=medium
+
+  * New upstream release
+
+ -- Mauna Linux <dev@maunalinux.top>  Wed, 17 Dec 2025 15:45:30 -0300
+
 mauna-common (2.3.6) polaris; urgency=medium
 
   * Remove aptdaemon from system
