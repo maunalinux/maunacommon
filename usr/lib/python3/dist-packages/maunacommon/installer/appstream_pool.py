@@ -388,6 +388,10 @@ class Pool():
 
         self.locale_variants = []
         tmp = set()
+
+        if remote.get_disabled():
+            return
+
         # There really needs to be some enforced consistency in appstream.
         # Need to account for hyphenated vs underscored, and all-lower vs
         # uppercase region codes.
