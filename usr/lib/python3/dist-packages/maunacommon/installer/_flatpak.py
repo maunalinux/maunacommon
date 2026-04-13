@@ -324,6 +324,9 @@ def _get_system_theme_matches():
         for remote in fp_sys.list_remotes():
             if remote.get_nodeps():
                 continue
+            if remote.get_disabled():
+                continue
+
             remote_name = remote.get_name()
 
             try:
