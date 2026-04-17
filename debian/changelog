@@ -1,3 +1,9 @@
+mauna-common (2.3.8) polaris; urgency=medium
+
+  * New upstream release
+
+ -- Mauna Linux <dev@maunalinux.top>  Thu, 16 Apr 2026 13:26:28 -0300
+
 mauna-common (2.3.7) polaris; urgency=medium
 
   * New upstream release
